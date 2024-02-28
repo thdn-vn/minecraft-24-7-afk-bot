@@ -1,12 +1,12 @@
 {
   "bot-account": {
-    "username": "bot",
-    "password": "your_password",
+    "username": "Afk_Bot",
+    "password": "afkbot248",
     "type": "microsoft"
   },
 
   "server": {
-    "ip": "localhost",
+    "ip": "play.sltopgamers.xyz",
     "port": 25565,
     "version": "1.19.3"
   },
@@ -20,18 +20,18 @@
 
   "utils": {
     "auto-auth": {
-      "enabled": false,
-      "password": "12345678"
+      "enabled": true,
+      "password": "afkbot248"
     },
 
     "anti-afk": {
-      "enabled": false,
+      "enabled": true,
       "sneak": false,
-      "jump": false,
-      "rotate": false,
+      "jump": true,
+      "rotate": true,
 
       "hit": {
-        "enabled": false,
+        "enabled": true,
         "delay": 1000,
         "attack-mobs": false
       },
@@ -56,7 +56,7 @@
     },
 
     "chat-log": true,
-    "auto-reconnect": false,
+    "auto-reconnect": true,
     "auto-reconnect-delay": 5000
   }
 }
