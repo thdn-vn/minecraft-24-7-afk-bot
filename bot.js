@@ -19,11 +19,17 @@ function createBot() {
    });
 
    bot.loadPlugin(pathfinder);
-   const mcData = require('minecraft-data')(bot.version);
-   const defaultMove = new Movements(bot, mcData);
+const mcData = require('minecraft-data')(bot.version);
+const defaultMove = new Movements(bot, mcData);
+
+// Đẩy dòng này xuống dưới vào sự kiện spawn
+bot.once('spawn', () => {
    bot.settings.colorsEnabled = false;
    bot.pathfinder.setMovements(defaultMove);
-
+   logger.info("Bot joined to the server");
+   
+   // (phần còn lại bạn giữ nguyên như cũ)
+});
    bot.once('spawn', () => {
       logger.info("Bot joined to the server");
 
