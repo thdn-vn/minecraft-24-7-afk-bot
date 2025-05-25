@@ -6,16 +6,16 @@
   },
 
   "server": {
-    "ip": "play.sltopgamers.xyz",
-    "port": 25565,
+    "ip": "g2.moonodes.net",
+    "port": 25521,
     "version": "1.19.3"
   },
 
   "position": {
-    "enabled": false,
-    "x": 0,
-    "y": 0,
-    "z": 0
+    "enabled": true,
+    "x": 1000,
+    "y": 400,
+    "z": 5000
   },
 
   "utils": {
@@ -32,8 +32,8 @@
 
       "hit": {
         "enabled": true,
-        "delay": 1000,
-        "attack-mobs": false
+        "delay": 500,
+        "attack-mobs": true
       },
 
       "circle-walk": {
